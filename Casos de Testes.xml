@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10002</projectId>
+    <projectKey>MLMG</projectKey>
+    <exportDate>2022-12-19 03:21:54 UTC</exportDate>
+    <folders>
+        <folder fullPath="Login" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="76888749" key="MLMG-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Aline David</createdBy>
+            <createdOn>2022-12-13 02:12:33 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>MLMG-2</key>
+                    <summary><![CDATA[Como usuário quero acessar a página da loja virtual de cadastro, login, recuperação e modificação de senha. ]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[sprint]]></label>
+                <label><![CDATA[web]]></label>
+            </labels>
+            <name><![CDATA[Cliente sem cadastro deseja criar conta]]></name>
+            <objective><![CDATA[verificar funcionalidade de login]]></objective>
+            <owner>638ab820489de2f7f46708c6</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given cliente sem cadastro deseja criar conta
+
+And não esteja cadastrado no sistema
+
+When clicar em criar conta
+
+Then será direcionado para uma tela de criação de nova conta]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77142205" key="MLMG-T3" paramType="PARAMETER">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Aline David</createdBy>
+            <createdOn>2022-12-17 02:36:47 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>MLMG-3</key>
+                    <summary><![CDATA[Preenchimento de formulário de usuário de conta na loja virtual para compra. ]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[sprint]]></label>
+                <label><![CDATA[web]]></label>
+            </labels>
+            <name><![CDATA[Formulário de usuário de conta na loja virtual.]]></name>
+            <objective><![CDATA[Verificar autenticidade dos dados]]></objective>
+            <owner>638ab820489de2f7f46708c6</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar o url da loja virtual]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza tela de cadastro]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[usu&aacute;rio preenche os dados Pessoa Fisica]]></description>
+                        <expectedResult><![CDATA[Confirmacao dos dados e avancar para tela de endereco]]></expectedResult>
+                        <testData><![CDATA[Nome, CPF, telefone, E-MAL]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[usu&aacute;rio preenche dados de endere&ccedil;o no item &quot;Endereco&quot;]]></description>
+                        <expectedResult><![CDATA[Confirma o preenchimento de endere&ccedil;o e avan&ccedil;a para pagamento e finaliza&ccedil;&atilde;o do cadastro.&nbsp;]]></expectedResult>
+                        <testData><![CDATA[CEP e preenchimento de completo e N&ordm;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76888777" key="MLMG-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Aline David</createdBy>
+            <createdOn>2022-12-13 02:19:41 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues>
+                <issue>
+                    <key>MLMG-3</key>
+                    <summary><![CDATA[Preenchimento de formulário de usuário de conta na loja virtual para compra. ]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[sprint]]></label>
+                <label><![CDATA[web]]></label>
+            </labels>
+            <name><![CDATA[Formulário de usuário de conta na loja virtual. BDD]]></name>
+            <objective><![CDATA[verificar a autenticidades dos dados preenchidos]]></objective>
+            <owner>638ab820489de2f7f46708c6</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper>
+                <testDataRow>
+                    <testDataColumns>
+                        <testData index="0">
+                            <name><![CDATA[Servidor Qa]]></name>
+                            <type><![CDATA[FREE_TEXT_INPUT]]></type>
+                            <value><![CDATA[165.12.21.34]]></value>
+                        </testData>
+                    </testDataColumns>
+                </testDataRow>
+                <testDataRow>
+                    <testDataColumns>
+                        <testData index="0">
+                            <name><![CDATA[Servidor Qa]]></name>
+                            <type><![CDATA[FREE_TEXT_INPUT]]></type>
+                        </testData>
+                    </testDataColumns>
+                </testDataRow>
+            </testDataWrapper>
+            <testScript type="bdd">
+                <details><![CDATA[Given na tela de Dados de identificacao informo os dados de Pessoa Fisica
+
+And na tela de Dados identificados clico em avancar
+
+And na tela de Enderecos informo o endereco
+
+When na tela de Endereços clico em salvar
+
+Then na tela de endereços será exibida a mensagem de sucesso direcionando para pagamentO]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77226984" key="MLMG-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Aline David</createdBy>
+            <createdOn>2022-12-19 02:24:49 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[web]]></label>
+            </labels>
+            <name><![CDATA[Cliente sem cadastro tenta fazer login]]></name>
+            <objective><![CDATA[Verificar autenticidade]]></objective>
+            <owner>638ab820489de2f7f46708c6</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio acessa url x]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio acessa a &aacute;rea do usu&aacute;rio<br /><br /><br />]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[cliente inseri os dados de USERNAME]]></description>
+                        <expectedResult><![CDATA[Exibe a resposta&nbsp;&nbsp;username n&atilde;o cadastrado<br /><br />]]></expectedResult>
+                        <testData><![CDATA[Ana&nbsp;]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[&nbsp;clicar em &ldquo;criar conta]]></description>
+                        <expectedResult><![CDATA[surgir&aacute; mensagem informando que a conta n&atilde;o existe<br /><br /><br />]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
